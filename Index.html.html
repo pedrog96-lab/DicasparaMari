@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dicas de BH para Mari 🐝</title>
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#F0EEE9;          /* Pantone Cloud Dancer 2026 */
+  --surface:#FAF9F6;
+  --ink:#2E2B28;
+  --muted:#7A746C;
+  --line:#E0DCD4;
+  --honey:#C9A25B;
+  --honey-ink:#fff;
+  --sage:#A9B4A0;
+  --clay:#D2B4A6;
+  --sky:#B7C4CC;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#1F1E1C;--surface:#2A2825;--ink:#F0EEE9;--muted:#A39C92;--line:#3A3733;
+    --honey:#D4AE69;--honey-ink:#1F1E1C;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1F1E1C;--surface:#2A2825;--ink:#F0EEE9;--muted:#A39C92;--line:#3A3733;
+  --honey:#D4AE69;--honey-ink:#1F1E1C;color-scheme:dark;
+}
+html{height:100%}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Inter",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;line-height:1.55}
+main{max-width:640px;margin:0 auto;padding:40px 20px 56px}
+header{margin-bottom:28px}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:"Georgia","Times New Roman",serif;font-weight:400;font-size:clamp(32px,8vw,44px);
+  line-height:1.1;margin:10px 0 14px}
+.intro{color:var(--muted);margin:0;max-width:52ch}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:26px 0 22px}
+.chip{border:1px solid var(--line);background:transparent;color:var(--ink);
+  padding:8px 14px;border-radius:999px;font:inherit;font-size:14px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+h2{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);
+  font-weight:500;margin:34px 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;
+  padding:20px;margin-bottom:12px;display:flex;flex-direction:column;gap:10px}
+.tag{align-self:flex-start;font-size:12px;padding:3px 10px;border-radius:999px;color:#2E2B28}
+.t-balada{background:var(--clay)}.t-bar{background:var(--sage)}
+.t-rest{background:var(--honey);color:var(--honey-ink)}.t-passeio{background:var(--sky)}
+.card h3{font-family:"Georgia",serif;font-weight:400;font-size:22px;margin:0}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.btn{align-self:flex-start;margin-top:4px;display:inline-flex;align-items:center;gap:6px;
+  background:var(--honey);color:var(--honey-ink);text-decoration:none;font-size:14px;font-weight:500;
+  padding:10px 18px;border-radius:999px}
+.btn:active{transform:scale(.98)}
+.hidden{display:none}
+footer{margin-top:36px;text-align:center;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="eyebrow">Belo Horizonte · fim de semana</div>
+  <h1>Dicas de BH para Mari 🐝</h1>
+  <p class="intro">Mari, como prometi, aqui está uma lista de lugares legais e não tão óbvios para sair em BH no fim de semana.</p>
+</header>
+
+<div class="chips" role="group" aria-label="Filtrar">
+  <button class="chip" data-f="all" aria-pressed="true">Tudo</button>
+  <button class="chip" data-f="balada" aria-pressed="false">Baladas</button>
+  <button class="chip" data-f="bar" aria-pressed="false">Bar</button>
+  <button class="chip" data-f="rest" aria-pressed="false">Restaurante</button>
+  <button class="chip" data-f="passeio" aria-pressed="false">Passeio</button>
+</div>
+
+<h2 data-sec="sair">Para sair</h2>
+
+<article class="card" data-c="balada">
+  <span class="tag t-balada">Balada</span>
+  <h3>Aflora BH</h3>
+  <p>Proposta diferente: dá para jantar mais cedo e, depois, o ambiente se transforma numa balada bem legal. Fica a pé do Hilton Garden Inn onde você ficou, na avenida lateral do McDonald’s (Guaicuí).</p>
+  <a class="btn" href="https://www.instagram.com/aflora.bh?cplk=MTZlcjMwbG80MDE3Ng==" target="_blank" rel="noopener">Ver no Instagram ↗</a>
+</article>
+
+<article class="card" data-c="balada">
+  <span class="tag t-balada">Balada</span>
+  <h3>Mira Beaga</h3>
+  <p>Balada no 25º andar de um prédio no centro de BH, com vários eventos temáticos, como o Summer Eletrohits.</p>
+  <a class="btn" href="https://www.instagram.com/mira_beaga?rpxt=YnBlOWk5ZXlyb3Rw" target="_blank" rel="noopener">Ver no Instagram ↗</a>
+</article>
+
+<article class="card" data-c="rest">
+  <span class="tag t-rest">Restaurante</span>
+  <h3>Terraço Nie</h3>
+  <p>No prédio que pertenceu ao Banco Itaú, onde minha mãe trabalhou grande parte da vida. Vista linda no almoço e no jantar, e dizem que a comida é excelente. Precisamos averiguar pessoalmente.</p>
+  <a class="btn" href="https://www.instagram.com/terraco.nie?xtok=bGswNXdvMmpudjhm" target="_blank" rel="noopener">Ver no Instagram ↗</a>
+</article>
+
+<article class="card" data-c="bar">
+  <span class="tag t-bar">Bar</span>
+  <h3>Mito Bar</h3>
+  <p>Bar com música ao vivo (sertanejo, nas vezes em que estive, antes e depois da pandemia). Tem um mezanino pequeno e uma área externa com petiscos.</p>
+  <a class="btn" href="https://www.instagram.com/mitobarbh?rpxt=OWJkb250cDVrd3J0" target="_blank" rel="noopener">Ver no Instagram ↗</a>
+</article>
+
+<article class="card" data-c="balada">
+  <span class="tag t-balada">Balada</span>
+  <h3>Raro Club</h3>
+  <p>Um pouco mais sofisticada. A produtora, Raro Eventos, faz também eventos elaborados e costuma pedir nome na lista, o que não é difícil de conseguir. Fui numa festa de Halloween bem elaborada no início do mês, depois te mostro as fotos. Vista linda, perto do BH Shopping que você visitou.</p>
+  <a class="btn" href="https://www.instagram.com/raroclub.com.br?xtok=ODJjdzhzbmpxbGdh" target="_blank" rel="noopener">Ver no Instagram ↗</a>
+</article>
+
+<h2 data-sec="turismo">Atrativos turísticos</h2>
+
+<article class="card" data-c="passeio">
+  <span class="tag t-passeio">Passeio</span>
+  <h3>Capivarã</h3>
+  <p>Novo barco turístico da Prefeitura, com passeio pela lagoa da Pampulha.</p>
+  <a class="btn" href="https://bileto.sympla.com.br/event/127629?share_id=1-email" target="_blank" rel="noopener">Ver ingressos ↗</a>
+</article>
+
+<footer>Feito com carinho para a Mari 🐝</footer>
+</main>
+
+<script>
+(function(){
+  var chips=document.querySelectorAll('.chip'),cards=document.querySelectorAll('.card'),secs=document.querySelectorAll('h2[data-sec]');
+  function apply(f){
+    chips.forEach(function(c){c.setAttribute('aria-pressed',c.dataset.f===f?'true':'false')});
+    cards.forEach(function(c){c.classList.toggle('hidden',f!=='all'&&c.dataset.c!==f)});
+    secs.forEach(function(s){
+      var n=s,any=false;
+      while((n=n.nextElementSibling)&&n.tagName!=='H2'){if(n.classList&&n.classList.contains('card')&&!n.classList.contains('hidden'))any=true}
+      s.classList.toggle('hidden',!any);
+    });
+  }
+  chips.forEach(function(c){c.addEventListener('click',function(){apply(c.dataset.f)})});
+})();
+</script>
+</body>
+</html>
